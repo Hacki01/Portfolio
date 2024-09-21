@@ -13,7 +13,7 @@ import Footer from "@/Components/Footer";
 const lato = Lato({weight:['100','300','400','700'], subsets:['latin']})
 
 export const metadata: Metadata = {
-  title: "Hextex/ Hacki",
+  title: "Hextex",
   description: "Hi, this is my portfolio so check it out!",
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
         className={lato.className+" flex flex-col h-screen"}
       >
         <Header />
-        <main className="h-full">
+        <main>
           {children}
         </main>
         <Footer />
