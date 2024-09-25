@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import LinkButton from '@/components/Buttons/LinkButton'
+import LinkButton from '@/Components/Buttons/LinkButton'
 import Profile from '/public/images/profile.png'
-import TechStack from '@/components/TechStack'
-import IconCloud from '@/components/TechStack/IconClaud'
+import TechStack from '@/Components/TechStack'
+import IconCloud from '@/Components/TechStack/IconClaud'
 
 const slugs = [
   "typescript",
