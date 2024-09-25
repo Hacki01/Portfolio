@@ -1,7 +1,7 @@
 "use client";
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image'
-import LinkButton from '@/Components/Buttons/LinkButton'
+import LinkButton from '@/components/Buttons/LinkButton'
 import Profile from '/public/images/profile.png'
 import FadeIn from 'react-fade-in';
 export default function Hello() {

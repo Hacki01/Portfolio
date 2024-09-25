@@ -1,4 +1,4 @@
-import Hello from '@/Components/HomeComponents/Hello'
+import Hello from '@/components/HomeComponents/Hello'
 
 export default function Home() {
   return (
