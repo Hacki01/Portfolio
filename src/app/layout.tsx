@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={lato.className+" flex flex-col h-screen"}
+        className={lato.className+" h-screen "}
       >
         <Header />
         <main>

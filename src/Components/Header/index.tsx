@@ -2,7 +2,7 @@ import "./index.css"
 import Link from 'next/link'
 
 export default function Header() {
-  return <header className="header p-7 flex items-center justify-between absolute bg-background w-full">
+  return <header className="header h-[80px] flex items-center justify-between bg-background w-full overflow-hidden">
     <a href='/' className='logo nodrag text-5xl ml-10 hover:cursor-pointer'>
       <span>H</span>
       <span>e</span>

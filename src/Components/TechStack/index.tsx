@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs'
 import Image from 'next/image'
 /* 
-  Tech stack that im using
+  Tech stack that im using readed from folder ./public/techstack/
 */
 function StackList (props: { items: string[], folder: string }) {
   const items = props.items
@@ -10,10 +10,11 @@ function StackList (props: { items: string[], folder: string }) {
     {
       items.map((e,key) => {
         const name = e.split('.')[0]
-        return <div key={key} className='bg-white p-1 rounded-xl' title={name}>
+        return <div key={key} className={`bg-white p-1 rounded-xl transform duration-150`} title={name}>
           <Image
-            width={64}
-            height={64}
+            className='m-auto'
+            width={70}
+            height={70}
             src={`/techstack/${folder}/${e}`}
             alt={name}
           />
@@ -27,7 +28,7 @@ export default async function TechStack() {
   const advanced = await fs.readdir('./public/techstack/advanced')
   const beginner = await fs.readdir('./public/techstack/beginner')
   const intermediate = await fs.readdir('./public/techstack/intermediate')
-  return <div className='mt-6'>
+  return <div className='mt-6 text-4xl'>
     <div className='opacity-40 p-3'>Advanced</div>
     <StackList items={advanced} folder='advanced'/>
     <div className='opacity-40 p-3'>Intermediate</div>
