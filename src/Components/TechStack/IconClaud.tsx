@@ -51,7 +51,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
       href: undefined,
       target: undefined,
       rel: undefined,
-      onClick: (e: any) => e.preventDefault(),
+      onClick: (e: React.MouseEvent) => e.preventDefault(),
     },
   });
 };
@@ -78,7 +78,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   }, [data]);
  
   return (
-    // @ts-ignore
+    //@ts-expect-error idk its magic ui error
     <Cloud {...cloudProps}>
       <>{renderedIcons}</>
     </Cloud>
