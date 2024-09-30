@@ -20,10 +20,10 @@ export default function Contact() {
     return () => clearTimeout(intervalId);
   }, []);
   return <div className="min-h-[calc(100vh-80px)] flex flex-col lg:flex-row">
-      <div className="text-6xl min-h-[300px] lg:w-[40%] flex items-center justify-center font-light">
+      <div className="text-5xl h-40 lg:h-auto lg:text-6xl lg:w-[40%] flex items-center justify-center font-light">
         <TextTransition className='w-[80%]' springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]}</TextTransition>
       </div>
-      <div className="text-3xl w-full p-5 lg:w-[50%] lg:ml-[25%] justify-center m-auto flex flex-col gap-3">
+      <div className="text-2xl lg:text-3xl w-full p-5 lg:w-[50%] lg:ml-[25%] justify-center flex flex-col gap-3">
         {/* email address */}
         <Link target='_blank' href='mailto:szymon.matloch11@gmail.com' className='hover:gap-7 transform duration-100 hover:text-accent flex items-center gap-5'><FontAwesomeIcon icon={faAt} width={24}/>Szymon.Matloch11@gmail.com</Link>
         {/* discord nickname */}

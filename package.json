@@ -17,7 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/material": "^6.1.0",
-    "next": "14.2.8",
+    "next": "^14.2.13",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
@@ -25,6 +25,7 @@
     "react-icon-cloud": "^4.1.4",
     "react-text-transition": "^3.1.0",
     "react-type-animation": "^3.2.0",
+    "react-wavify": "^1.11.1",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
