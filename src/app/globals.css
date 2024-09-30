@@ -5,12 +5,12 @@
 :root {
   --bgColor: #0b0b0b;
   --textColor: #d9d9d9;
-  --accentColor: #861fa5;
+  --accentColor: #ca63e9;
 }
 
 body {
   color: var(--textColor);
-  background: var(--bgColor);
+  background: linear-gradient(-80deg, #0b0b0b,#0b050d);
   font-family: Arial, Helvetica, sans-serif;
 }
 

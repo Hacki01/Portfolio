@@ -11,7 +11,7 @@ export default function Hello() {
         sequence={[
           `Hi, I'm Szymon 🖐`,
           5000, 
-          'I created this website in Next.js',
+          'I created this website with Next.js',
           3500, 
           `Feel free to text me`,
           3500,

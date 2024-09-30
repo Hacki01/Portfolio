@@ -10,7 +10,7 @@ function StackList (props: { items: string[], folder: string }) {
     {
       items.map((e,key) => {
         const name = e.split('.')[0]
-        return <div key={key} className={`bg-white p-1 rounded-xl transform duration-150`} title={name}>
+        return <div key={key} className={`bg-white p-1 rounded-xl hover:scale-110 transform duration-150`} title={name}>
           <Image
             className='m-auto'
             width={70}
