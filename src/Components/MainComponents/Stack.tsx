@@ -1,4 +1,4 @@
-import TechStack from '@/Components/TechStack'
+import TechStackList from '@/Components/TechStack/List'
 import IconCloud from '@/Components/TechStack/IconClaud'
 
 const slugs = [
@@ -31,7 +31,7 @@ const slugs = [
 export default function Stack() {
   return <div>
     <div className='mt-14 text-4xl opacity-65'>Tech Stack</div>
-      <TechStack/>
+      <TechStackList/>
       <div className='flex justify-center'>
         <IconCloud iconSlugs={slugs}/>
       </div>
