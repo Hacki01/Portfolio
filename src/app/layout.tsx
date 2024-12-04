@@ -13,7 +13,7 @@ import Footer from "@/Components/Footer";
 const lato = Lato({weight:['100','300','400','700'], subsets:['latin']})
 
 export const metadata: Metadata = {
-  title: "Hextex",
+  title: "Szymon Matloch",
   description: "Hi, this is my portfolio so check it out!",
 };
 
@@ -27,6 +27,7 @@ export default function RootLayout({
       <body
         className={lato.className}
       >
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <Header />
         <main>
           {children}

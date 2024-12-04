@@ -1,6 +1,4 @@
 'use client'
-
-import "./index.css"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -16,19 +14,14 @@ function NavbarLink(params:{ path:string, text:string}) {
 }
 
 export default function Header() {
-  return <header className="header h-[80px] flex items-center justify-between w-full overflow-hidden">
-    <a href='/' className='logo nodrag text-5xl ml-10 hover:cursor-pointer'>
-      <span>H</span>
-      <span>e</span>
-      <span>x</span>
-      <span>t</span>
-      <span>e</span>
-      <span>x</span>
-    </a>
-    <div className="navbarLinks flex">
-      <NavbarLink path='/about' text='About me' />
-      <NavbarLink path='/contact' text='Contact' />
-      <NavbarLink path='/projects' text='Projects' />
+  return <header className="header h-[80px] flex items-center justify-between w-full overflow-hidden fixed">
+    <div className="mx-6 flex gap-4">
+      <NavbarLink path='#' text='Szymon Matloch'/>
     </div>
+    {/* <div className="navbarLinks flex">
+      <NavbarLink path='#about' text='About me' />
+      <NavbarLink path='#contact' text='Contact' />
+      <NavbarLink path='#projects' text='Projects' />
+    </div> */}
   </header>
 }

@@ -12,10 +12,8 @@ import {
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
     style: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      width: "100%",
+      width: "70%",
+      margin:'auto',
       paddingTop: 40,
     },
   },
@@ -79,7 +77,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
  
   return (
     //@ts-expect-error idk its magic ui error
-    <Cloud {...cloudProps}>
+    <Cloud style={{width:'30%'}} {...cloudProps}>
       <>{renderedIcons}</>
     </Cloud>
   );

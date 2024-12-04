@@ -1,23 +1,40 @@
-import { promises as fs } from 'fs'
-import Image from 'next/image'
-/* 
-  Tech stack that im using readed from folder ./public/techstack/
-*/
-function StackList (props: { items: string[], folder: string }) {
+interface Technology {
+  name: string;
+  icon: string;
+}
+
+const mainTechStackList: Technology[] = [
+  {
+    name: 'React',
+    icon: 'devicon-react-original',
+  },
+  {
+    name: 'Next.js',
+    icon: 'devicon-nextjs-plain',
+  },
+  {
+    name: 'Node.js',
+    icon: 'devicon-nodejs-plain',
+  },
+  {
+    name: 'Typescript',
+    icon: 'devicon-typescript-plain',
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: 'devicon-tailwindcss-original',
+  },
+]
+
+function StackList (props: { items: Technology[] }) {
   const items = props.items
-  const folder = props.folder
-  return <div className='flex flex-wrap gap-3 justify-center'>
+  return <div className='flex flex-wrap gap-2 font-light py-'>
     {
       items.map((e,key) => {
-        const name = e.split('.')[0]
-        return <div key={key} className={`bg-white p-1 rounded-xl hover:scale-110 transform duration-150`} title={name}>
-          <Image
-            className='m-auto'
-            width={70}
-            height={70}
-            src={`/techstack/${folder}/${e}`}
-            alt={name}
-          />
+        const { name, icon } = e
+        return <div key={key} className={`bg-slate-400 gap-2 bg-opacity-15 p-2 text-xl flex items-center rounded-md hover:bg-zinc-700`} title={name}>
+          <i className={icon}></i>
+          <div className='opacity-70'>{name}</div>
         </div>
       })
     }
@@ -25,15 +42,8 @@ function StackList (props: { items: string[], folder: string }) {
 }
 
 export default async function TechStack() {
-  const advanced = await fs.readdir('./public/techstack/advanced')
-  const beginner = await fs.readdir('./public/techstack/beginner')
-  const intermediate = await fs.readdir('./public/techstack/intermediate')
-  return <div className='mt-6 text-4xl'>
-    <div className='opacity-40 p-3'>Advanced</div>
-    <StackList items={advanced} folder='advanced'/>
-    <div className='opacity-40 p-3'>Intermediate</div>
-    <StackList items={intermediate} folder='intermediate'/>
-    <div className='opacity-40 p-3'>Beginner</div>
-    <StackList items={beginner} folder='beginner'/>
+  return <div className='mt-6'>
+    <StackList items={mainTechStackList}/>
+    <button className={`bg-slate-400 gap-2 mt-1 bg-opacity-15 p-2 text-xl flex items-center rounded-md hover:bg-zinc-700`}>More...</button>
   </div>
 }
