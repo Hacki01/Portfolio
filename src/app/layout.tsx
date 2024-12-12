@@ -6,7 +6,7 @@ import "./globals.css";
 import { Lato } from "next/font/google";
 
 // Import Components
-import Header from "@/Components/Header";
+/* import Header from "@/Components/Header"; */
 import Footer from "@/Components/Footer";
 
 
