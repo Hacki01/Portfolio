@@ -25,7 +25,9 @@ const slugs = [
   "wordpress",
   "discord",
   "clickup",
-  "notion"
+  "notion",
+  "redux",
+  "scss"
 ];
 
 export default function Stack() {

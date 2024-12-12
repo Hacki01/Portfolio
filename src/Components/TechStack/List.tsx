@@ -51,6 +51,14 @@ const otherTechStackList: Technology[] = [
     name: 'Express',
     icon: 'devicon-express-original',
   },
+  {
+    name: 'Redux',
+    icon: 'devicon-redux-original',
+  },
+  {
+    name: 'SCSS',
+    icon: 'devicon-scss-original',
+  },
 ]
 
 

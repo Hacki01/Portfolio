@@ -28,7 +28,7 @@ export default function RootLayout({
         className={lato.className}
       >
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <Header />
+        {/* <Header /> */}
         <main>
           {children}
         </main>
